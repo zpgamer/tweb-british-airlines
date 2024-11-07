@@ -1,0 +1,127 @@
+@charset "UTF-8";
+body {
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  color: rgb(2, 27, 65);
+  font-size: 16px;
+}
+
+.header-logo {
+  display: flex;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: flex-start; /* Alinha o logo à esquerda */
+}
+
+.nav {
+  padding: 10px;
+  margin-top: 10px; /* Margem superior para separação do logo */
+}
+
+.main-list {
+  width: 100%;
+  display: flex; /* Flex para a lista principal */
+  /* Remove preenchimento */
+}
+
+.main-list li {
+  cursor: pointer; /* Muda o cursor para indicar clicável */
+}
+
+.sub-list {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+  padding: 0px;
+  display: none;
+  gap: 15px;
+}
+
+.main-list li:hover .sub-list {
+  display: flex; /* Mostra a sublista ao passar o mouse */
+}
+
+.main-list li:nth-child(6) {
+  /* O sexto item encostado à direita */
+  margin-left: auto;
+  padding-right: 50px;
+}
+
+li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+button {
+  padding-bottom: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 16px;
+  border: none; /* Remove a borda padrão */
+  background-color: rgb(46, 92, 153); /* Cor de fundo */
+  color: white;
+  align-items: flex-start;
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  cursor: pointer; /* Muda o cursor ao passar o mouse */
+  transition: background-color 0.3s; /* Transição suave para a cor do fundo */
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: rgb(2, 27, 65); /* Cor de fundo ao passar o mouse */
+}
+
+#main-footer.footer {
+  background-color: #002147 !important;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  display: grid;
+  gap: 24px;
+  padding: 24px 5%;
+}
+#main-footer.footer .footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+#main-footer.footer .footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+#main-footer.footer .footer-links a:hover {
+  color: #cccccc;
+}
+#main-footer.footer .logo svg {
+  width: 100px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+}
+#main-footer.footer .footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+#main-footer.footer .footer-social a {
+  color: #ffffff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+#main-footer.footer .footer-social a:hover {
+  color: #cccccc;
+}
+#main-footer.footer .footer-social i {
+  font-size: 20px;
+}
+#main-footer.footer .footer-copyright {
+  font-size: 12px;
+  color: #cccccc;
+}/*# sourceMappingURL=index.css.map */
